@@ -7,9 +7,9 @@ import MainHeader from './components/MainHeader/MainHeader';
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  useEffect(() => {
-    setIsLoggedIn(true)
-  }, [])
+  // useEffect(() => {
+  //   setIsLoggedIn(true)
+  // }, [])
 
   const loginHandler = (email, password) => {
     setIsLoggedIn(true);
