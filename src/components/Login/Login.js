@@ -1,8 +1,9 @@
-import React, { useContext, useEffect, useReducer, useState } from 'react';
+import React, { useContext, useReducer, useState } from 'react';
 
 import Card from '../UI/Card/Card';
 import classes from './Login.module.css';
 import Button from '../UI/Button/Button';
+import Input from '../UI/Inputs/input';
 import AuthContext from '../store/auth-context';
 
 const emailHandler = (state, action) => {
@@ -126,7 +127,7 @@ const Login = () => {
             }`}
         >
           <label htmlFor="email">E-Mail</label>
-          <input
+          <Input
             type="email"
             id="email"
             autoComplete='email'
@@ -140,7 +141,7 @@ const Login = () => {
             }`}
         >
           <label htmlFor="password">Password</label>
-          <input
+          <Input
             type="password"
             id="password"
             autoComplete='new-password'
